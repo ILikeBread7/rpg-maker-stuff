@@ -13,8 +13,8 @@
  * Keys: ok (ENTER), left, right, up, down, escape, tab, shift, control, pageup, pagedown, debug (F9)
  * 
  * Plugin Command:
- *   ILB_ClickToButtonPress left key X Y WIDTH HEIGHT  # Maps left mouse click on the specified to the key
- *   ILB_ClickToButtonPress right key X Y WIDTH HEIGHT # Maps right mouse click on the specified to the key
+ *   ILB_ClickToButtonPress left key X Y WIDTH HEIGHT  # Maps left mouse click on the specified area to the key
+ *   ILB_ClickToButtonPress right key X Y WIDTH HEIGHT # Maps right mouse click on the specified area to the key
  *   ILB_ClickToButtonPress clear                      # Clears the mappings
  */
 
