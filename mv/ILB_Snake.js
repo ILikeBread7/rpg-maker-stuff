@@ -66,14 +66,14 @@
  * @help This plugin allows you to create a custom scene in RPG Maker MV.
  * 
  * Plugin Command:
- *   ILB_Snake start 5                    # Starts the game at level 5 (lower levels are more difficult), accepts variables on the \V[ID] format
+ *   ILB_Snake start 5                    # Starts the game at level 5 (lower levels are more difficult), accepts variables on the \V[ID] format, e.g. ILB_Snake start \V[1]
  *   ILB_Snake stop                       # Stops the minigame and returns to the map
  *   ILB_Snake reset                      # Resets the state of the game
- *   ILB_Snake snakeimageoffset 0,0 48,48 # Redefines the "Snake Image Offsets" parameter
- *   ILB_Snake foodimageoffset 0,0 48,48  # Redefines the "Food Image Offsets" parameter
+ *   ILB_Snake snakeimageoffset 0,0 48,48 # Redefines the "Snake Image Offsets" parameter, the two image offsets (0,0 and 48,48) will now be alternating (one segment 0,0 next segment 48,48 and so on)
+ *   ILB_Snake foodimageoffset 0,0 48,48  # Redefines the "Food Image Offsets" parameter, the two image offsets (0,0 and 48,48) will now be alternating (one food image 0,0 next 48,48 and so on)
  *   ILB_Snake snakeimage img/characters/Actor1 # Redefines the "Snake Image Path" parameter
  *   ILB_Snake foodimage img/characters/Actor2  # Redefines the "Food Image Path" parameter
- *   ILB_Snake eatse {"name":"Absorb2","volume":90,"pitch":100,"pan":0}   # Redefines the "Eat Sound Effects" parameter
+ *   ILB_Snake eatse {"name":"Absorb1","volume":90,"pitch":100,"pan":0} {"name":"Absorb2","volume":90,"pitch":100,"pan":0}   # Redefines the "Eat Sound Effects" parameter, the two sound effects will now alternate
  *   ILB_Snake crashse {"name":"Absorb1","volume":90,"pitch":100,"pan":0} # Redefines the "Crash Sound Effect" parameter
  */
 
