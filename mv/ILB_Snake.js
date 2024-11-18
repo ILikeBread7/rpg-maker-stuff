@@ -63,7 +63,7 @@
  * @desc The ID of the variable to store the score (or 0 if not used)
  * @default 1
  * 
- * @help This plugin allows you to create a custom scene in RPG Maker MV.
+ * @help This plugin creates a snake minigame.
  * 
  * Plugin Command:
  *   ILB_Snake start 5                    # Starts the game at level 5 (lower levels are more difficult), accepts variables on the \V[ID] format, e.g. ILB_Snake start \V[1]
