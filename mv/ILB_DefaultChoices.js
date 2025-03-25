@@ -7,7 +7,7 @@
  * @author I_LIKE_BREAD7
  *
  * @param Default choice variable ID
- * @desc Variable used as the default choice value
+ * @desc Variable used as the default choice value, 0 to not use
  * @default 1
  *
  * @help This plugin allows you to set the default choice to the value of the variable passes as the parameter.
@@ -48,7 +48,7 @@
         if (n !== this._choiceCancelType) {
             if (name) {
                 namesMap.set(name, n);
-            } else {
+            } else if (defaultChoiceVariableId) {
                 $gameVariables.setValue(defaultChoiceVariableId, n);
             }
         }
@@ -66,7 +66,7 @@
             // -1 to use the value provided in the game editor
             // in case the value in the map isn't present
             newDefaultChoice = defaultChoiceFromName === undefined ? -1 : defaultChoiceFromName;
-        } else {
+        } else if (defaultChoiceVariableId) {
             const defaultChoiceFromVariable = $gameVariables.value(defaultChoiceVariableId);
             newDefaultChoice = defaultChoiceFromVariable;
         }
